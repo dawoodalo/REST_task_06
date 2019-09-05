@@ -3,7 +3,7 @@ from datetime import datetime
 
 from .models import Flight, Booking
 from .serializers import FlightSerializer, BookingSerializer, BookingDetailsSerializer, UpdateBookingSerializer, RegisterSerializer, AdminUpdateBookingSerializer
-from rest_framework.permissions import AllowAny, IsAuthenticated, IsAdminUser
+from rest_framework.permissions import AllowAny, IsAuthenticated,
 from .permissions import IsOwner, IsFuture
 
 class FlightsList(ListAPIView):
